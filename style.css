@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#1f1833;
+}
+
+header, .header_wrapper {
+    width :100%;
+}
+
+.hero_banner {
+    align-items: center;
+    background: linear-gradient(180deg, rgb(86, 64, 105), rgb(47, 28, 66));
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero_banner h1, .hero_banner h3 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    text-align: center;
+}
+
+.sexy_font {
+    font-family: 'MedievalSharp', cursive;
+}
+
+.main_form{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    min-width: 500px;
+    background-color:#90a1a8;
+}
+
+.section{
+    display: inline-block;
+    width: auto;
+}
+
+.title_section{
+    background-color:#68717a;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+    padding: 8px;
+    width: 100%;
+}
+
+.skills_section{
+    background-color:#68717a;
+}
+
+.attribute_section{
+    display: inline-block;
+    width: auto;
+}
+
+.unique_section{
+    padding: 8px;
+    width: 80%;
+}
+
+.description_section{
+    background-color:#68717a;
+    padding: 8px;
+    width: 80%;
+}
+
+.submit_section{
+    display: flex;
+    background-color:#68717a;
+    justify-content: center;
+    padding: 8px;
+}
+
+.input_box{
+    display: inline-block;
+    padding: 8px;
+    width: 70%;
+}
+
+.input_box input{
+    display: inline-block;
+    float: right;
+}
+
+.input_box label{
+    display: inline-block;
+    float: left;
+}
+
+.description_section{
+    display: block;
+    font-family: 'MedievalSharp', cursive;
+    font-size: large;
+    padding: 24px;
+    width: 100%;
+}
+
+.description_section p:first-child:first-letter {
+    color: #c93038;
+    float: left;
+    font-family: Georgia;
+    font-size: 64px;
+    line-height: 60px;
+    padding-top: 0px;
+    padding-right: 8px;
+    padding-left: 3px;
+    text-shadow: 2px 0px white,-2px 0px white,0px 2px white,0px -2px white;
+  }
+
+.input_wrapper{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input_wrapper>label{
+    display: inline-block;
+}
+
+.attributes_wrapper>label{
+    display: block;
+
+}
+.attributes_wrapper>input{
+    display: block;
+
+}
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet" type="text/css"></link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <script async defer src="./app.js" type="text/javascript"></script>
+    <title>JS controlled forms</title>
+  </head>
+  <body>
+    <noscript>
+      <h1>YOU HAVE DISABLED THE JAVASCRIPTS?! FOOL! YOU HAVE UNDONE THE NATURAL ORDER!!!</h1>
+    </noscript>
+    <header>
+      <div class="header_wrapper">
+        <div class="hero_banner">
+          <h1>Intro to JS - form validations</h1>
+          <h3>Remember to always validate on both ends.</h3>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form class="main_form">
+        <section class="section title_section">
+          <div class="input_wrapper name_wrapper">
+            <label class="sexy_font" for="char_name">Character Name</label>
+            <input class="sexy_font" id="nameInput" name="char_name" maxlength="30" type="text"/>
+          </div>
+          <div class="input_wrapper class_wrapper">
+            <label class="sexy_font" for="class_name">Class</label>
+            <select id="classInput" name="class_name" required>
+              <optgroup label="Choose Class" disabled></optgroup>
+                <option>Select a class</option>
+              </optgroup>
+              <optgroup label="Available Classes">
+                <option>Archer</option>
+                <option>Assassin</option>
+                <option>Engineer</option>
+                <option>Guard</option>
+                <option>Knight</option>
+                <option>Mage</option>
+                <option>Merchant</option>
+                <option>Priest</option>
+                <option>Rogue</option>
+                <option>Scout</option>
+              </optgroup>
+              <optgroup label="Restricted Classes" disabled>
+                <option>Paladin</option>
+                <option>Wizard</option>
+                <option>Barbarian</option>
+                <option>Cleric</option>
+                <option>Thief</option>
+                <option>Noble</option>
+              </optgroup>
+            </select>
+          </div>
+          <div id="points" class="points">
+            <p id="points_string">Skill points: </p>
+          </div>
+        </section>
+        <section class="section attribute_section">
+          <div class="input_wrapper stats_wrapper">
+            <div class="input_box"> 
+              <label for="health">Health</label>
+              <input id="healthInput" name="health" type="number" readonly disabled>
+            </div>
+            <div class="input_box">
+              <label for="magicka">Magicka</label>
+              <input id="magickaInput" name="magicka" type="number" readonly disabled>
+            </div>
+          </div>
+          <div class="input_wrapper attributes_wrapper">
+            <div class="input_box">
+              <label for="charisma">Charisma</label>
+              <input id="charismaInput" name="charisma" type="number">
+            </div>
+            <div class="input_box">
+              <label for="speed">Speed</label>
+              <input id="speedInput" name="speed" type="number">
+            </div>
+            <div class="input_box">
+              <label for="strength">Strength</label>
+              <input id="strengthInput" name="strength" type="number">
+            </div>
+            <div class="input_box">
+              <label for="wisdom">Wisdom</label>
+              <input id="wisdomInput" name="wisdom" type="number">
+            </div>
+          </div>
+        </section>
+        <section class="section skills_section">
+          <div class="input_wrapper skills_wrapper">
+            <div class="input_box">
+              <label for="bladedWeapons">Bladed Weapons</label>
+              <input id="bladedWeaponsInput" name="bladedWeapons" type="number">
+            </div>
+            <div class="input_box">
+              <label for="darkMagic">Dark Magic</label>
+              <input id="darkMagicInput" name="darkMagic" type="number">
+            </div>
+            <div class="input_box">
+              <label for="heavyArmor">Heavy Armor</label>
+              <input id="heavyArmorInput" name="heavyArmor" type="number">
+            </div>
+            <div class="input_box">
+              <label for="leadership">Leadership</label>
+              <input id="leadershipInput" name="leadership" type="number">
+            </div>
+            <div class="input_box">
+              <label for="lightArmor">Light Armor</label>
+              <input id="lightArmorInput" name="lightArmor" type="number">
+            </div>
+            <div class="input_box">
+              <label for="lightMagic">Light Magic</label>
+              <input id="lightMagicInput" name="lightMagic" type="number">
+            </div>
+            <div class="input_box">
+              <label for="marksman">Marksman</label>
+              <input id="marksmanInput" name="marksman" type="number">
+            </div>
+            <div class="input_box">
+              <label for="perception">Perception</label>
+              <input id="perceptionInput" name="perception" type="number">
+            </div>
+            <div class="input_box">
+              <label for="polearms">Polearms</label>
+              <input id="polearmsInput" name="polearms" type="number">
+            </div>
+            <div class="input_box">
+              <label for="speechcraft">Speechcraft</label>
+              <input id="speechcraftInput" name="speechcraft" type="number">
+            </div>
+            <div class="input_box">
+              <label for="trade">Trade</label>
+              <input id="tradeInput" name="trade" type="number">
+            </div>
+            <div class="input_box">
+              <label for="unarmedCombat">Unarmed Combat</label>
+              <input id="unarmedCombatInput" name="unarmedCombat" type="number">
+            </div>
+          </div>
+        </section>
+        <section class="section unique_section">
+          <div class="unique_wrapper">
+            <h5>Strengths</h5>
+            <ul id="bonus" class="bonus">
+              <li>test</li>
+            </ul>
+            <h5>Weakness</h5>
+            <ul id="weakness" class="weakness">
+              <li>test</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section description_section">
+          <div class="description_wrapper">
+            <p id="description_text">Loading...</p>
+          </div>
+        </section>
+        <section class="section submit_section">
+          <div class="submit_btn_wrapper">
+            <button id="submitButton">Create Character</button>
+          </div>
+        </section>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
