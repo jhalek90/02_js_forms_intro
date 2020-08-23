@@ -359,6 +359,8 @@ classInput.addEventListener("change", (event) => {
     hideClass("input_box",false);
     hideClass("unique_section",false);
     hideClass("description_section",false);
+
+    document.getElementById("magickaInput").value=5;
     document.getElementById("charismaInput").value=classes[c].baseStats.charisma;
     document.getElementById("strengthInput").value=classes[c].baseStats.strength;
     document.getElementById("speedInput").value=classes[c].baseStats.speed;
@@ -518,7 +520,6 @@ function changeValue(stat, value) {
   }else{
     document.getElementById("points_string").innerHTML = "Skill points: "+(20-points_used);
   }
-  
 
 }
 
@@ -559,7 +560,7 @@ function addtolist(list,value) {
 
 
 function CreateCharacter(c){
-  alert("Creating character from class: "+c);
+  //alert("Creating character from class: "+c);
   this.name=document.getElementById("nameInput").value;
   this.class=c;
   this.baseStats={};
@@ -586,6 +587,8 @@ function CreateCharacter(c){
   this.skills.speechcraft=document.getElementById("speechcraftInput").value;
   this.skills.trade=document.getElementById("tradeInput").value;
   this.skills.unarmedCombat=document.getElementById("unarmedCombatInput").value; 
+
+  window.print();
 }
 
 function checkPoints(c){
@@ -602,7 +605,6 @@ function checkPoints(c){
   spent+=(document.getElementById("speechcraftInput").value-classes[c].skills.speechcraft);
   spent+=(document.getElementById("tradeInput").value-classes[c].skills.trade);
   spent+=(document.getElementById("unarmedCombatInput").value-classes[c].skills.unarmedCombat);
-
   return spent;
 }
 // #endregion
@@ -611,7 +613,7 @@ function checkPoints(c){
 // Example of how you can use JS to manipulate the values of inputs.
 const healthInput = document.getElementById("healthInput");
 healthInput.value = 5;
-console.log("Hahaha, your character is WEAK! You are no match for my dark sorcery! Run while you can!");
+console.log("set health to default value of 5");
 // #endregion
 
 //Fin

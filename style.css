@@ -145,4 +145,8 @@ header, .header_wrapper {
 
 }
 
-
+@media print {
+    header, .submit_section, .footer {
+        display: none;
+    }
+}
